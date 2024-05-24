@@ -9,7 +9,6 @@
 ### PCN toolkit v0.22 was used as recommended by the leading author of this tool (Dr. Andre F. Marquand)
 
 ### details of the the Hierarchical Bayesian Regression can be found in https://github.com/amarquand/PCNtoolkit/blob/v0.22/tests/testHBR.py
-
 import os
 import pandas as pd
 import pcntoolkit as ptk
