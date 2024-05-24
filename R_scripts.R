@@ -33,8 +33,8 @@ lms.model <- lms(region, age, method.pb="GAIC", data=data_train,k=5)
 # GAMLSS, based on the preferred model of https://doi.org/10.1101/2021.06.14.448106 and https://github.com/dinga92/gamlss_normative_paper 
 gamlss.model <- gam(list(region ~ s(age),
                              ~ s(age), 
-                             ~ 1, 
-                             ~ 1), 
+                             ~ s(age), 
+                             ~ s(age)), 
                         data = data_train,
                         family = shash(),
                         optimizer = 'efs')
