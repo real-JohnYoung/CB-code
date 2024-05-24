@@ -21,7 +21,6 @@ from pcntoolkit.util.utils import create_bspline_basis, compute_MSLL
 from sklearn.model_selection import train_test_split
 
 ### details of the the Warped Bayesian Linear Regression can be found in https://pcntoolkit.readthedocs.io/en/latest/pages/BLR_normativemodel_protocol.html
-
 # different optimizers (i.e., 'powell', 'nelder-mead', 'cg', and 'l-bfgs-b') have been tested, and 'powell' gives the best performance
 yhat_test, s2_test, nm_test, Z_test, metrics_test = estimate(cov_file_tr, 
                                                              resp_file_tr, 
